@@ -55,8 +55,8 @@ label {
 }
 
 .bayan-item__input:checked ~ .meme {
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
     visibility: visible;
     transform: scale(1);
 }
@@ -108,8 +108,8 @@ label {
     }
 
     .bayan-item__input:hover ~ .meme {
-        width: 90%;
-        height: 90%;
+        width: 70%;
+        height: 70%;
         visibility: visible;
         transform: scale(1);
     }
@@ -125,11 +125,7 @@ label {
 
 
 @media (min-width: 1920px) {
-    .bayan-item__input:checked ~ .meme {
-        width: 70%;
-        height: 70%;
-    }
-
+    
     .bayan-title {
         font-size: 5rem;
     }
