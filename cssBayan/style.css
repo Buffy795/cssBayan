@@ -7,6 +7,37 @@ body {
     font-size: Arial, sans-serif;
 }
 
-.container {
+.bayan {
+    margin: 0 auto;
+    max-width: 16rem;
+}
+
+.bayan-item {
+    margin-bottom: 5px;
+    border: 1px solid #000;
+}
+
+.bayan-item__title {
+    display: block;
+    padding: 10px 15px;
+    color: #8d2626;
+    cursor: pointer;
+
+    transition: background-color .2s ease-out;
+}
+
+.bayan-item__input {
+    width: 0;
+    height: 0;
+    appearance: none;
+}
+
+.bayan-item__input:checked + .meme {
+    display: block;
+}
+
+.meme {
+    display: none;
+    width: 90%;
     margin: 0 auto;
 }
