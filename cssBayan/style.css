@@ -9,8 +9,7 @@ p {
 body {
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(assets/bg.jpg);
-    background-size: cover;
+    background-color: #e4e0ed;
 }
 
 .bayan {
@@ -62,7 +61,7 @@ label {
     transform: scale(1);
 }
 
-.bayan-item__input:checked + .flex>.plus{
+.bayan-item__input:checked + .flex>.plus {
     rotate: 90deg;
 }
 
@@ -71,8 +70,9 @@ label {
 }
 
 .plus {
-    transition: rotate .5s ease;
-    width: 10%;
+    visibility: hidden;
+    transition: rotate .8s ease-out;
+    width: 7%;
 }
 
 .meme {
@@ -81,5 +81,83 @@ label {
     height: 0;
     visibility: hidden;
     margin: 0.5rem auto;
-    transition: all .5s ease;
+    transition: all 1s ease;
+}
+
+@media (min-width: 820px) {
+    .bayan {
+        max-width: 60%;
+    }
+
+    .bayan-title {
+        font-size: 3rem;
+    }
+
+    .flex {
+        font-size: 1.5rem;
+    }
+}
+
+@media (hover:hover) {
+    .bayan:hover .plus {
+        visibility: visible;
+    }
+
+    .bayan:hover .bayan-item__label {
+        color: #25376a;
+    }
+
+    .bayan-item__input:hover ~ .meme {
+        width: 90%;
+        height: 90%;
+        visibility: visible;
+        transform: scale(1);
+    }
+
+    .bayan-item__input:hover + .flex>.plus {
+        rotate: 90deg;
+    }
+
+    .bayan-item__input:hover + .flex>p {
+        color: #25376a;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .bayan-item__input:checked ~ .meme {
+        width: 70%;
+        height: 70%;
+    }
+
+    .bayan-title {
+        font-size: 5rem;
+    }
+
+    .flex {
+        font-size: 2rem;
+    }
+
+    .bayan:hover .plus {
+        visibility: visible;
+    }
+
+    .bayan:hover .bayan-item__label {
+        color: #25376a;
+    }
+
+    .bayan-item__input:hover ~ .meme {
+        width: 70%;
+        height: 70%;
+        visibility: visible;
+        transform: scale(1);
+    }
+
+    .bayan-item__input:hover + .flex>.plus {
+        rotate: 90deg;
+    }
+
+    .bayan-item__input:hover + .flex>p {
+        color: #25376a;
+    }
 }
